@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">cipher</string>
+
+
+
+    <string-array name="data_types">
+        <item>--select data type--</item>
+        <item>Text</item>
+        <item>Image</item>
+        <item>Sound</item>
+
+    </string-array>
+    <string-array name="algo_types">
+        <item>AES</item>
+        <item>BlowFish</item>
+    </string-array>
+
+
+</resources>
