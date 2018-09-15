@@ -2,7 +2,6 @@
     <string name="app_name">cipher</string>
 
 
-
     <string-array name="data_types">
         <item>--select data type--</item>
         <item>Text</item>
@@ -14,6 +13,10 @@
         <item>AES</item>
         <item>BlowFish</item>
     </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 
 </resources>

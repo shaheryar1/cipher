@@ -40,16 +40,13 @@ public class MediaCipher {
 
     }
 
-    public static byte[] decryptFile(String key, byte[] textCryp) {
+    public static byte[] decryptFile(String key, byte[] textCryp)throws Exception {
         Cipher cipher;
         byte[] decrypted = null;
-        try {
+
             cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
             cipher.init(Cipher.DECRYPT_MODE, Globals.generateKey(key));
             decrypted = cipher.doFinal(textCryp);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
         return decrypted;
     }
@@ -74,6 +71,7 @@ public class MediaCipher {
         byte[] decVal=c.doFinal(decryptedValue);
         return new String(decVal);
     }
+
 
 
 

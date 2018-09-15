@@ -1,5 +1,7 @@
 package com.eg.cipher;
 
+import android.app.AlertDialog;
+import android.content.Context;
 import android.graphics.Bitmap;
 
 import java.nio.ByteBuffer;
@@ -38,5 +40,15 @@ public class Globals {
         ByteBuffer buffer = ByteBuffer.wrap(bytes);
          bitmap_tmp.copyPixelsFromBuffer(buffer);
          return  bitmap_tmp;
+    }
+
+    public static void alert(String message, Context ctx)
+    {
+        AlertDialog.Builder alert = new AlertDialog.Builder(ctx);
+
+        alert.setTitle("Doctor");
+        alert.setMessage(message);
+        alert.setPositiveButton("OK", null);
+        alert.show();
     }
 }
